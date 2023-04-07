@@ -1,14 +1,13 @@
 import React, { Fragment } from "react";
 import Navbar from "../components/Navbar/Navbar";
-import HomeSection from "../components/HomeSection/HeroSection";
-import AboutUs from "../components/About-us/AboutUs";
+import HomeSection from "../components/HomeSection/HomeSection";
+import AboutUs from "../components/AboutUs/AboutUs";
 import Courses from "../components/Courses/Courses";
-import ChooseUs from "../components/Choose-us/ChooseUs";
-import Features from "../components/Feature-section/Features";
-import FreeCourses from "../components/FreeCourses/FreeCourses";
+import ChooseUs from "../components/ChooseUs/ChooseUs";
+// import FreeCourses from "../components/FreeCourses/FreeCourses";
 import Comments from "../components/Comments/Comments";
 import Footer from "../components/Footer/Footer";
-
+import Payment from "./Payment";
 const Home = () => {
   return (
     <Fragment>
@@ -17,10 +16,10 @@ const Home = () => {
       <AboutUs />
       <Courses />
       <ChooseUs />
-      <Features />
-      <FreeCourses />
+      {/* <FreeCourses /> */}
       <Comments />
       <Footer />
+      <Payment />
     </Fragment>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col, ListGroup, ListGroupItem } from "reactstrap";
+import logo from "../../assets/logo.png";
 
 import "./footer.css";
 
@@ -19,28 +20,11 @@ const footerQuickLinks = [
   },
 
   {
-    display: "Blog",
-    url: "#",
-  },
-];
-
-const footerInfoLinks = [
-  {
-    display: "Privacy Policy",
+    display: "Kids",
     url: "#",
   },
   {
-    display: "Membership",
-    url: "#",
-  },
-
-  {
-    display: "Purchases Guide",
-    url: "#",
-  },
-
-  {
-    display: "Terms of Service",
+    display: "Contact",
     url: "#",
   },
 ];
@@ -51,12 +35,12 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="3" md="6" className="mb-4">
-            <h2 className=" d-flex align-items-center gap-1">
-              <i class="ri-pantone-line"></i> Learners.
-            </h2>
+            <div class="logo">
+              <img src={logo} alt="" className="logo" />
+            </div>
 
             <div className="follows">
-              <p className="mb-0">Follow us on social media</p>
+              <p className="mb-0">Our Social Media Platforms</p>
               <span>
                 {" "}
                 <a href="facebook.com">
@@ -99,24 +83,12 @@ const Footer = () => {
             </ListGroup>
           </Col>
 
-          <Col lg="3" md="6" className="mb-4">
-            <h6 className="fw-bold">Information</h6>
-            <ListGroup className="link__list">
-              {footerInfoLinks.map((item, index) => (
-                <ListGroupItem key={index} className="border-0 ps-0 link__item">
-                  {" "}
-                  <a href={item.url}>{item.display}</a>
-                </ListGroupItem>
-              ))}
-            </ListGroup>
-          </Col>
-
           <Col lg="3" md="6">
-            <h6 className="fw-bold">Get in Touch</h6>
+            <h6 className="fw-bold">Contact Us</h6>
 
-            <p>Address: Sylhet, Bangladesh</p>
-            <p> Phone: +88 0123456789 </p>
-            <p>Email: example@gmail.com</p>
+            <p>Address: Suli, Iraq</p>
+            <p> Phone: +964 0123456789 </p>
+            <p>Email: sample@gmail.com</p>
           </Col>
         </Row>
       </Container>

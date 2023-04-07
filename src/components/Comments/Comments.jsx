@@ -1,9 +1,9 @@
 import React from "react";
-import "./testimonial.css";
+import "./comments.css";
 import { Container, Row, Col } from "reactstrap";
 import Slider from "react-slick";
 
-import img from "../../assets/testimonial01.png";
+import img from "../../assets/comments.jpg";
 
 const Comments = () => {
   const settings = {
@@ -26,14 +26,12 @@ const Comments = () => {
               </div>
 
               <div className="testimonial__content w-50">
-                <h2 className="mb-4">Our Students Voice</h2>
+                <h2 className="mb-4">Customer Feedback</h2>
 
                 <Slider {...settings}>
                   <div>
                     <div className="single__testimonial">
-                      <h6 className="mb-3 fw-bold">
-                        Excellent course of materials
-                      </h6>
+                      <h6 className="mb-3 fw-bold">Excellent</h6>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Facilis saepe id voluptas molestiae. Aperiam corrupti
@@ -41,17 +39,15 @@ const Comments = () => {
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">A B</h6>
+                        <p>Suli, Iraq</p>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <div className="single__testimonial">
-                      <h6 className="mb-3 fw-bold">
-                        Excellent course of materials
-                      </h6>
+                      <h6 className="mb-3 fw-bold">Awesome</h6>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Facilis saepe id voluptas molestiae. Aperiam corrupti
@@ -59,17 +55,15 @@ const Comments = () => {
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">C D</h6>
+                        <p>Erbil, Iraq</p>
                       </div>
                     </div>
                   </div>
 
                   <div>
                     <div className="single__testimonial">
-                      <h6 className="mb-3 fw-bold">
-                        Excellent course of materials
-                      </h6>
+                      <h6 className="mb-3 fw-bold">Good</h6>
                       <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Facilis saepe id voluptas molestiae. Aperiam corrupti
@@ -77,8 +71,8 @@ const Comments = () => {
                       </p>
 
                       <div className="student__info mt-4">
-                        <h6 className="fw-bold">Jhon Doe</h6>
-                        <p>California, United State</p>
+                        <h6 className="fw-bold">E F</h6>
+                        <p>Suli, Iraq</p>
                       </div>
                     </div>
                   </div>

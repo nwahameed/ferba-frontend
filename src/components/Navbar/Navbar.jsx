@@ -54,7 +54,7 @@ const Navbar = () => {
             <div className="nav__right">
               <p className="mb-0 d-flex align-items-center gap-2">
                 <i class="ri-shopping-cart-line"></i>
-                <a href="#">Cart</a>
+                <a href="../pages/Payment">Cart</a>
               </p>
             </div>
           </div>

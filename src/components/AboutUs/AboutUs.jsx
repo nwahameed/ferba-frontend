@@ -1,7 +1,7 @@
 import React from "react";
 import "./aboutus.css";
 import { Container, Row, Col } from "reactstrap";
-import aboutImg from "../../assets/about-us.png";
+import aboutImg from "../../assets/AboutUs.jpg";
 import CountUp from "react-countup";
 
 const AboutUs = () => {
@@ -28,37 +28,19 @@ const AboutUs = () => {
                 <div className=" d-flex gap-5 align-items-center">
                   <div className="single__counter">
                     <span className="counter">
-                      <CountUp start={0} end={25} duration={2} suffix="K" />
+                      <CountUp start={0} end={176} duration={2} />
                     </span>
 
-                    <p className="counter__title">Completed Projects</p>
-                  </div>
-
-                  <div className="single__counter">
-                    <span className="counter">
-                      <CountUp start={0} end={12} duration={2} suffix="M" />
-                    </span>
-
-                    <p className="counter__title">Patient Around World</p>
+                    <p className="counter__title">Users</p>
                   </div>
                 </div>
 
-                <div className=" d-flex gap-5 align-items-center">
-                  <div className="single__counter">
-                    <span className="counter">
-                      <CountUp start={0} end={95} duration={2} suffix="M" />
-                    </span>
+                <div className="single__counter">
+                  <span className="counter">
+                    <CountUp start={0} end={70} duration={2} />
+                  </span>
 
-                    <p className="counter__title">Ideas Raised Funds</p>
-                  </div>
-
-                  <div className="single__counter">
-                    <span className="counter">
-                      <CountUp start={0} end={5} duration={2} suffix="K" />
-                    </span>
-
-                    <p className="counter__title">Categories Served</p>
-                  </div>
+                  <p className="counter__title">Courses</p>
                 </div>
               </div>
             </div>

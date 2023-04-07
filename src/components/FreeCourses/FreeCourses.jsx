@@ -7,7 +7,7 @@ import courseImg03 from "../../assets/seo.png";
 import courseImg04 from "../../assets/ui-ux.png";
 import FreeCourseCard from "./FreeCard";
 
-import "./free-course.css";
+import "./freecourses.css";
 
 const freeCourseData = [
   {
