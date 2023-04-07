@@ -1,6 +1,6 @@
 import React, { Fragment } from "react";
 import Navbar from "../components/Navbar/Navbar";
-// import HeroSection from "../components/Hero-Section/HeroSection";
+import HomeSection from "../components/HomeSection/HeroSection";
 // import AboutUs from "../components/About-us/AboutUs";
 // import Courses from "../components/Courses-section/Courses";
 // import ChooseUs from "../components/Choose-us/ChooseUs";
@@ -13,14 +13,15 @@ const Home = () => {
   return (
     <Fragment>
       <Navbar />
-      {/* <HeroSection />
-      <AboutUs />
+      <HomeSection />
+      {/* <AboutUs />
       <Courses />
       <ChooseUs />
       <Features />
       <FreeCourse />
       <Testimonials />
-      <Footer /> */}
+      <Footer /> */}{" "}
+      */
     </Fragment>
   );
 };
