@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
 import Navbar from "../components/Navbar/Navbar";
 import HomeSection from "../components/HomeSection/HeroSection";
-// import AboutUs from "../components/About-us/AboutUs";
-// import Courses from "../components/Courses-section/Courses";
+import AboutUs from "../components/About-us/AboutUs";
+import Courses from "../components/Courses/Courses";
 // import ChooseUs from "../components/Choose-us/ChooseUs";
 // import Features from "../components/Feature-section/Features";
 // import FreeCourse from "../components/Free-course-section/FreeCourse";
@@ -14,14 +14,13 @@ const Home = () => {
     <Fragment>
       <Navbar />
       <HomeSection />
-      {/* <AboutUs />
+      <AboutUs />
       <Courses />
-      <ChooseUs />
+      {/* <ChooseUs />
       <Features />
       <FreeCourse />
       <Testimonials />
-      <Footer /> */}{" "}
-      */
+      <Footer />  */}
     </Fragment>
   );
 };
