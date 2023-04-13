@@ -1,11 +1,16 @@
 import React, { useState } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 import "./navbar.css";
 import { FaBars } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
 import logo from "../../assets/logo.png";
+import { logout } from "../../redux/userSlice";
+import Button from "../Button/Button";
 
 const Navbar = () => {
+  const user = useSelector((state) => state.user.data);
+  const dispatch = useDispatch();
   const [Mobile, setMobile] = useState(false);
   return (
     <nav className="navbar">
@@ -34,11 +39,16 @@ const Navbar = () => {
         <Link to="/payment">
           <li>Cart</li>
         </Link>
-        <Link to="/login">
-          <li>Login</li>
-        </Link>
+        <li>
+          {user.email ? (
+            <Button text="Logout" handleClick={() => dispatch(logout())} />
+          ) : (
+            <Link to="/login">
+              <Button text="Login" />
+            </Link>
+          )}
+        </li>
       </ul>
-
       <div className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
         {Mobile ? <ImCross /> : <FaBars />}
       </div>
