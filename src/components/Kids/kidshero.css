@@ -1,4 +1,4 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
 }
@@ -10,13 +10,13 @@ body {
   min-height: 100hv;
   background: #f4faff;
   overflow: hidden;
-}
+} */
 
 .earth {
   position: relative;
   width: 400px;
   height: 400px;
-  background: #0588e4 url(./assets/2.jpg);
+  background: #0588e4 url(../../assets/2.jpg);
   background-size: cover;
   border-radius: 50%;
   box-shadow: 0 0 50px rgba(15, 168, 173, 0.85);
