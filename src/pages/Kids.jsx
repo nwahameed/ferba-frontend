@@ -1,7 +1,12 @@
 import React from "react";
+import KidsHero from "../components/Kids/KidsHero";
 
 const Kids = () => {
-  return <div>Kids</div>;
+  return (
+    <>
+      <KidsHero />
+    </>
+  );
 };
 
 export default Kids;
