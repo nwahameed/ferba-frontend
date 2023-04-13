@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../../redux/userSlice";
 import "./login.css";
+import Home from "../Home";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -53,54 +54,51 @@ const Login = () => {
   }
 
   if (status === "success") {
-    return <h1>You're logged In</h1>;
+    return <Home />;
   }
 
   return (
-    <Container>
-      <div className="login-form-container">
-        <form className="login-form" onSubmit={handleSubmit}>
-          <h2>Login</h2>
-          <label htmlFor="email">Email:</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={formData.email}
-            onChange={handleInput}
-            className="required"
-          />
-          <label htmlFor="password">Password:</label>
-          <input
-            type="password"
-            id="password"
-            name="password"
-            value={formData.password}
-            onChange={handleInput}
-            className="required"
-          />
-          <input
-            type="submit"
-            disabled={status !== "typing" || status === "submitting"}
-            value={status === "submitting" ? "Logging in..." : "login"}
-          />
-        </form>
-        {error ? (
-          <p className="error" style={{ color: "red" }}>
-            {error.message}
-          </p>
-        ) : null}
-      </div>
-    </Container>
+    <div className="login-form-container">
+      <form className="login-form" onSubmit={handleSubmit}>
+        <h2>Login</h2>
+        <label htmlFor="email">Email:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value={formData.email}
+          onChange={handleInput}
+          className="required"
+        />
+        <label htmlFor="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          value={formData.password}
+          onChange={handleInput}
+          className="required"
+        />
+        <input
+          type="submit"
+          disabled={status !== "typing" || status === "submitting"}
+          value={status === "submitting" ? "Logging in..." : "login"}
+        />
+      </form>
+      {error ? (
+        <p className="error" style={{ color: "red" }}>
+          {error.message}
+        </p>
+      ) : null}
+    </div>
   );
 };
 
 function submitForm({ email, password }) {
-  // Pretend it's hitting the network.
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      let invalidEmail = email.toLowerCase() !== "sahand@gmail.com";
-      let invalidPassword = password.toLowerCase() !== "sahand";
+      let invalidEmail = email.toLowerCase() !== "nwa@gmail.com";
+      let invalidPassword = password.toLowerCase() !== "nwa";
       if (invalidEmail || invalidPassword) {
         reject(new Error("Invalid Email Address"));
       } else {

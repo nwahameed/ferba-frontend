@@ -34,6 +34,9 @@ const Navbar = () => {
         <Link to="/payment">
           <li>Cart</li>
         </Link>
+        <Link to="/login">
+          <li>Login</li>
+        </Link>
       </ul>
 
       <div className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>

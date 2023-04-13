@@ -1,13 +1,14 @@
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import React from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/Navbar/Navbar";
 import Footer from "./components/Footer/Footer";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import About from "./pages/About";
 import Courses from "./pages/Courses";
 import Kids from "./pages/Kids";
 import Contact from "./pages/Contact";
 import Payment from "./pages/Payment/Payment";
+import Login from "./pages/login/Login";
 
 const App = () => {
   return (
@@ -32,6 +33,9 @@ const App = () => {
           </Route>
           <Route path="/payment" element={Payment} exact>
             <Payment />
+          </Route>
+          <Route path="/login" element={Login} exact>
+            <Login />
           </Route>
         </Switch>
       </Router>
