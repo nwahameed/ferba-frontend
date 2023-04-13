@@ -1,73 +1,45 @@
-import React, { useRef } from "react";
-import { Container } from "reactstrap";
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./navbar.css";
+import { FaBars } from "react-icons/fa";
+import { ImCross } from "react-icons/im";
 import logo from "../../assets/logo.png";
 
-const navLinks = [
-  {
-    display: "Home",
-    url: "#",
-  },
-  {
-    display: "About",
-    url: "#",
-  },
-
-  {
-    display: "Courses",
-    url: "#",
-  },
-  {
-    display: "Kids",
-    url: "#",
-  },
-  {
-    display: "Contact",
-    url: "#",
-  },
-];
-
 const Navbar = () => {
-  const menuRef = useRef();
-
-  const menuToggle = () => menuRef.current.classList.toggle("active__menu");
-
+  const [Mobile, setMobile] = useState(false);
   return (
-    <header className="header">
-      <Container>
-        <div className="navigation d-flex align-items-center justify-content-between">
-          <div class="logo">
-            <img src={logo} alt="" className="logo" />
-          </div>
+    <nav className="navbar">
+      <div className="logo">
+        <img src={logo} alt="" />
+      </div>
+      <ul
+        className={Mobile ? "nav-links-mobile" : "nav-links"}
+        onClick={() => setMobile(false)}
+      >
+        <Link to="/">
+          <li>Home</li>
+        </Link>
+        <Link to="/about">
+          <li>About</li>
+        </Link>
+        <Link to="/courses">
+          <li>Courses</li>
+        </Link>
+        <Link to="/kids">
+          <li>Kids</li>
+        </Link>
+        <Link to="/contact">
+          <li>Contact</li>
+        </Link>
+        <Link to="/payment">
+          <li>Cart</li>
+        </Link>
+      </ul>
 
-          <div className="nav d-flex align-items-center gap-5">
-            <div className="nav__menu" ref={menuRef} onClick={menuToggle}>
-              <ul className="nav__list">
-                {navLinks.map((item, index) => (
-                  <li key={index} className="nav__item">
-                    <a href={item.url}>{item.display}</a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            <div className="nav__right">
-              <p className="mb-0 d-flex align-items-center gap-2">
-                <i class="ri-shopping-cart-line"></i>
-                <a href="../pages/Payment">Cart</a>
-              </p>
-            </div>
-          </div>
-
-          <div className="mobile__menu">
-            <span>
-              <i class="ri-menu-line" onClick={menuToggle}></i>
-            </span>
-          </div>
-        </div>
-      </Container>
-    </header>
+      <div className="mobile-menu-icon" onClick={() => setMobile(!Mobile)}>
+        {Mobile ? <ImCross /> : <FaBars />}
+      </div>
+    </nav>
   );
 };
-
 export default Navbar;
