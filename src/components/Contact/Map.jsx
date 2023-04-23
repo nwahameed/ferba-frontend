@@ -49,7 +49,7 @@ const Map = () => {
       <div className="container">
         <div className="map__card">
           <h3 className="map__card__heading">Here is me</h3>
-          <PText>GEC circle, Chittagong, Bangladesh</PText>
+          <PText>Sulaimnaiyah, Iraq</PText>
           <a
             className="map__card__link"
             href="https://www.google.com/maps/place/Sulaymaniyah/@35.5632298,45.2952529,12z/data=!3m1!4b1!4m6!3m5!1s0x40002c0536d143b1:0xf791750d4e215dea!8m2!3d35.5557603!4d45.4351181!16zL20vMDJfd3Az"

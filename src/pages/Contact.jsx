@@ -12,6 +12,3 @@ const Contact = () => {
 };
 
 export default Contact;
-
-// import ContactSection from '../components/ContactSection';
-// import Map from '../components/Map';
