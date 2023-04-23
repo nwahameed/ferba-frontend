@@ -38,11 +38,11 @@ const FormStyle = styled.form`
     cursor: pointer;
   }
 `;
-const ContactForm = () => {
+
+export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   return (
     <>
       <FormStyle>
@@ -86,6 +86,4 @@ const ContactForm = () => {
       </FormStyle>
     </>
   );
-};
-
-export default ContactForm;
+}

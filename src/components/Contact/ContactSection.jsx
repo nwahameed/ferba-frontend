@@ -51,7 +51,7 @@ const ContactSectionStyle = styled.div`
   }
 `;
 
-const ContactSection = () => {
+export default function ContactSection() {
   return (
     <ContactSectionStyle>
       <div className="container">
@@ -69,6 +69,4 @@ const ContactSection = () => {
       </div>
     </ContactSectionStyle>
   );
-};
-
-export default ContactSection;
+}

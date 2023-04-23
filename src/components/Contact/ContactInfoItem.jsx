@@ -25,7 +25,10 @@ const ItemStyles = styled.div`
   }
 `;
 
-const ContactInfoItem = ({ icon = <MdPlace />, text = "I need text " }) => {
+export default function ContactInfoItem({
+  icon = <MdPlace />,
+  text = "I need text ",
+}) {
   return (
     <ItemStyles>
       <div className="icon">{icon}</div>
@@ -34,11 +37,4 @@ const ContactInfoItem = ({ icon = <MdPlace />, text = "I need text " }) => {
       </div>
     </ItemStyles>
   );
-};
-
-export default ContactInfoItem;
-
-// export default function ContactInfoItem({
-//   icon = <MdPlace />,
-//   text = 'I need text ',
-// })
+}

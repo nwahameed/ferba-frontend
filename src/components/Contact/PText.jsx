@@ -11,6 +11,10 @@ const PStyle = styled.div`
   }
 `;
 
-const PText = () => {
-  return <PStyle className="para">{/* <p>{children}</p> */}</PStyle>;
-};
+export default function PText({ children }) {
+  return (
+    <PStyle className="para">
+      <p>{children}</p>
+    </PStyle>
+  );
+}

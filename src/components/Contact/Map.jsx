@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import MapImg from "../assets/images/map.png";
+import MapImg from "../../assets/map.png";
 import PText from "./PText";
 
 const MapStyles = styled.div`
@@ -52,7 +52,7 @@ const Map = () => {
           <PText>GEC circle, Chittagong, Bangladesh</PText>
           <a
             className="map__card__link"
-            href="https://www.google.com/maps/place/GEC+More,+Chittagong/@22.3590818,91.8195583,17z/data=!3m1!4b1!4m5!3m4!1s0x30acd89aaa8239cd:0x6e65fa00001dd59f!8m2!3d22.3590715!4d91.8215486"
+            href="https://www.google.com/maps/place/Sulaymaniyah/@35.5632298,45.2952529,12z/data=!3m1!4b1!4m6!3m5!1s0x40002c0536d143b1:0xf791750d4e215dea!8m2!3d35.5557603!4d45.4351181!16zL20vMDJfd3Az"
             target="_blank"
             rel="noreferrer"
           >
@@ -60,7 +60,7 @@ const Map = () => {
           </a>
         </div>
       </div>
-      {/* <img src={MapImg} alt="Map" /> */}
+      <img src={MapImg} alt="Map" />
     </MapStyles>
   );
 };

@@ -23,16 +23,15 @@ const SectionTitleStyle = styled.div`
     }
   }
 `;
-const SectionTitle = (
+
+export default function SectionTitle({
   subheading = "Need Subheading",
-  heading = "need heading"
-) => {
+  heading = "need heading",
+}) {
   return (
     <SectionTitleStyle className="section-title">
       <p>{subheading}</p>
       <h2>{heading}</h2>
     </SectionTitleStyle>
   );
-};
-
-export default SectionTitle;
+}
