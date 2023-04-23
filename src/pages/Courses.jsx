@@ -1,7 +1,12 @@
 import React from "react";
+import Course from "../components/Course/Course";
 
 const Courses = () => {
-  return <></>;
+  return (
+    <>
+      <Course />
+    </>
+  );
 };
 
 export default Courses;

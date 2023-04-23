@@ -3,10 +3,10 @@ import { Container, Row, Col } from "reactstrap";
 import Img1 from "../../assets/python.jpg";
 import Img2 from "../../assets/design.jpg";
 import Img3 from "../../assets/digital.jpg";
-import "./courses.css";
+import "./course.css";
 import Card from "./Card";
 
-const coursesData = [
+const courseData = [
   {
     id: "01",
     title: "Python Programming for Beginners",
@@ -35,7 +35,7 @@ const coursesData = [
   },
 ];
 
-const Courses = () => {
+const Course = () => {
   return (
     <section>
       <Container>
@@ -56,7 +56,7 @@ const Courses = () => {
               </div>
             </div>
           </Col>
-          {coursesData.map((item) => (
+          {courseData.map((item) => (
             <Col lg="4" md="6" sm="6">
               <Card key={item.id} item={item} />
             </Col>
@@ -67,4 +67,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default Course;
