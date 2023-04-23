@@ -1,0 +1,66 @@
+import Img1 from "./assets/python.jpg";
+import Img2 from "./assets/design.jpg";
+import Img3 from "./assets/digital.jpg";
+
+export const courses = [
+  {
+    id: "01",
+    title: "Python Programming for Beginners",
+    lesson: 20,
+    students: 8.5,
+    rating: 5.9,
+    imgUrl: Img1,
+    category: "coding",
+    price: 10,
+  },
+  {
+    id: "02",
+    title: "Professional Graphics Design, PhotoShop",
+    lesson: 10,
+    students: 9.0,
+    rating: 3.0,
+    imgUrl: Img2,
+    category: "graphic-design",
+    price: 10,
+  },
+  {
+    id: "01",
+    title: "Python Programming for Beginners",
+    lesson: 20,
+    students: 8.5,
+    rating: 5.9,
+    imgUrl: Img1,
+    category: "coding",
+    price: 10,
+  },
+  {
+    id: "03",
+    title: "Digital Marketing Course 2023",
+    lesson: 15,
+    students: 7.5,
+    rating: 7.0,
+    imgUrl: Img3,
+    category: "marketing",
+    price: 10,
+  },
+  {
+    id: "04",
+    title: "dearhrftdegrdsfh thy btrds",
+    lesson: 15,
+    students: 7.5,
+    rating: 7.0,
+    imgUrl: Img3,
+    category: "marketing",
+    price: 10,
+  },
+  {
+    id: "04",
+    title: "dearhrftdegrdsfh thy btrds",
+    lesson: 15,
+    students: 7.5,
+    rating: 7.0,
+    imgUrl: Img3,
+    category: "marketing",
+    price: 10,
+  },
+];

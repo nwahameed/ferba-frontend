@@ -30,13 +30,13 @@ const Navbar = () => {
         <Link to="/courses">
           <li>Courses</li>
         </Link>
-        <Link to="/kids">
+        {/* <Link to="/kids">
           <li>Kids</li>
-        </Link>
+        </Link> */}
         <Link to="/contact">
           <li>Contact</li>
         </Link>
-        <Link to="/payment">
+        <Link to="/cart">
           <li>Cart</li>
         </Link>
         <li>

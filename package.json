@@ -18,6 +18,7 @@
     "react-router-dom": "^5.3.4",
     "react-scripts": "5.0.1",
     "react-slick": "^0.29.0",
+    "react-use-cart": "^1.13.0",
     "reactstrap": "^9.1.8",
     "remixicon": "^3.1.1",
     "routes": "^2.1.0",
