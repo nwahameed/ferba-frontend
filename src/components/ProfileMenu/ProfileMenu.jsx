@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useState, useRef, useEffect, useCallback } from "react";
 import user from "../../assets/user.png";
-import { useState } from "react";
-import { useRef } from "react";
+import "./profileMenu.css";
 
 const ProfileMenu = () => {
   const [open, setOpen] = useState(false);
@@ -10,34 +9,37 @@ const ProfileMenu = () => {
   const menuRef = useRef();
   const imgRef = useRef();
 
-  window.addEventListener("click", (e) => {
-    if (e.target !== menuRef.current && e.target !== imgRef.current);
+  useEffect(() => {
+    const handleClick = (e) => {
+      if (e.target !== menuRef.current && e.target !== imgRef.current) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("click", handleClick);
+    return () => {
+      window.removeEventListener("click", handleClick);
+    };
+  }, []);
+
+  const handleMenuClick = useCallback(() => {
     setOpen(false);
-  });
+  }, []);
 
   return (
-    <div className="h-screen bg-gray-200 flex justify-center pt-12">
-      <div className="relative ">
+    <div className="mmain">
+      <div className="ab">
         <img
           ref={imgRef}
           onClick={() => setOpen(!open)}
           src={user}
           alt="user"
-          className="h-20 w-20 object-cover border-4 border-gray-400
-        rounded-full cursor-pointer"
+          className="cd"
         />
         {open && (
-          <div
-            ref={menuRef}
-            className="bg-white p-4 w-52 shadow-lg absolute -left-14 top-24"
-          >
+          <div ref={menuRef} className="ef">
             <ul>
               {Menus.map((menu) => (
-                <li
-                  onClick={() => setOpen(false)}
-                  className="p-2 text-lg cursor-pointer rounded hover:bg-blue-100"
-                  key={menu}
-                >
+                <li onClick={handleMenuClick} className="abc" key={menu}>
                   {menu}
                 </li>
               ))}
