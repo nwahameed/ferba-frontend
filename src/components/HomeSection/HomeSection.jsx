@@ -17,10 +17,10 @@ const HomeSection = () => {
                 quas officiis et repellat!
               </p>
             </div>
-            <div className="search">
+            {/* <div className="search">
               <input type="text" placeholder="Search" />
               <button className="btn">Search</button>
-            </div>
+            </div> */}
           </Col>
 
           <Col lg="6" md="6">

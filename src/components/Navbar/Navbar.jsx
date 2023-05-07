@@ -17,10 +17,15 @@ const Navbar = () => {
       <div className="logo">
         <img src={logo} alt="" />
       </div>
+
       <ul
         className={Mobile ? "nav-links-mobile" : "nav-links"}
         onClick={() => setMobile(false)}
       >
+        <div className="search">
+          <input type="text" placeholder="Search" />
+          <button className="btn">Search</button>
+        </div>
         <Link to="/">
           <li>Home</li>
         </Link>
